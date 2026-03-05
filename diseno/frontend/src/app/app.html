@@ -1,0 +1,106 @@
+<div class="container">
+  <header class="header">
+    <h1 class="title">⚡ Acortador de URLs</h1>
+    <p class="subtitle">Crea URLs cortas y rastrea su rendimiento</p>
+  </header>
+
+  <section class="card creator-section">
+    <div class="section-header">
+      <h2 class="section-title">📝 Crear URL Corta</h2>
+      <p class="section-desc">Introduce una URL larga para generar su versión acortada</p>
+    </div>
+    
+    <form [formGroup]="form" (ngSubmit)="create()" class="form-container">
+      <div class="input-group">
+        <input 
+          type="text" 
+          formControlName="originalUrl"
+          placeholder="https://ejemplo.com/pagina-muy-larga"
+          class="input-field"
+        />
+        <button 
+          type="submit" 
+          class="btn btn-primary"
+          [disabled]="isCreating"
+        >
+          {{ isCreating ? 'Procesando...' : 'Acortar URL' }}
+        </button>
+      </div>
+    </form>
+
+    <div *ngIf="shortUrl" class="result-box">
+      <div class="result-content">
+        <p class="result-label">Tu URL acortada:</p>
+        <a [href]="shortUrl" target="_blank" class="short-url">{{ shortUrl }}</a>
+        <button 
+          type="button" 
+          (click)="loadStats()" 
+          [disabled]="!shortCode || isLoadingStats"
+          class="btn btn-secondary"
+        >
+          {{ isLoadingStats ? 'Cargando...' : '📊 Ver Estadísticas' }}
+        </button>
+      </div>
+    </div>
+
+    <p class="error-message" *ngIf="error">{{ error }}</p>
+  </section>
+
+  <section class="card stats-section" *ngIf="stats">
+    <div class="section-header">
+      <div class="stats-header-top">
+        <h2 class="section-title">📈 Estadísticas - {{ stats.code }}</h2>
+        <button 
+          type="button" 
+          (click)="refreshStats()" 
+          [disabled]="isLoadingStats"
+          class="btn btn-refresh"
+          title="Actualizar estadísticas"
+        >
+          {{ isLoadingStats ? '⏳' : '🔄' }}
+        </button>
+      </div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-label">URL Original:</span>
+        <a [href]="stats.original" target="_blank" class="stat-value-link">{{ stats.original }}</a>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Creada:</span>
+        <span class="stat-value">{{ stats.createdAt | date: 'dd/MM/yyyy HH:mm' }}</span>
+      </div>
+      <div class="stat-item stat-highlight">
+        <span class="stat-label">Total de Accesos:</span>
+        <span class="stat-value-large">{{ stats.totalAccesses }}</span>
+      </div>
+    </div>
+
+    <div class="stats-section-div">
+      <h3 class="subsection-title">🌍 Accesos por País</h3>
+      <div class="countries-list">
+        <div class="country-item" *ngFor="let c of objectKeys(stats.countries)">
+          <span class="country-name">{{ c }}</span>
+          <div class="country-bar">
+            <div class="country-bar-fill" [style.width.%]="(stats.countries[c] / getMaxCountryAccess()) * 100"></div>
+          </div>
+          <span class="country-count">{{ stats.countries[c] }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-section-div">
+      <h3 class="subsection-title">📅 Accesos por Día</h3>
+      <div class="day-chart">
+        <div class="chart-bar" *ngFor="let d of objectKeys(stats.byDay)">
+          <div class="bar-container">
+            <div class="bar-fill" [style.height.px]="stats.byDay[d] * 15"></div>
+          </div>
+          <span class="bar-label">{{ d }}</span>
+          <span class="bar-value">{{ stats.byDay[d] }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
