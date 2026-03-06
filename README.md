@@ -14,14 +14,17 @@ Kevin David Jiménez Escalante
 
 # Entregable
 
-Documento con capturas de pantalla de solución funcionando
+Documento con capturas de pantalla de solución funcionando:
 
+[[INSERTAR ENLACE]]
 
-Enlace a máquina virtual (instancia) Oracle Cloud
+Enlace a máquina virtual (instancia) Oracle Cloud:
 
+[[INSERTAR ENLACE]]
 
 Enlace al repositorio de código fuente en GIT:
 
+[[INSERTAR ENLACE]]
 
 
 # Otros Recursos
