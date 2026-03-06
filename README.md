@@ -1,5 +1,5 @@
 # DS_TareaMVCconMean
-MVC con Mean.
+MVC con Mean
 
 Integrantes:
 
