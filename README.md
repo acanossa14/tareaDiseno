@@ -24,7 +24,7 @@ Enlace a máquina virtual (instancia) Oracle Cloud:
 
 Enlace al repositorio de código fuente en GIT:
 
-[[INSERTAR ENLACE]]
+https://github.com/acanossa14/tareaDiseno
 
 
 # Otros Recursos
