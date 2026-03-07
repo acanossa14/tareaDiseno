@@ -13,11 +13,11 @@ Kevin David Jiménez Escalante
 
 # Entregable
 
-Documento con capturas de pantalla de solución funcionando: En carpeta "imagenes"
-
 Enlace a la máquina virtual pública con la solución corriendo: http://147.224.191.175:3000
 
 Enlace al repositorio de código fuente en GIT: https://github.com/acanossa14/tareaDiseno
+
+Capturas de pantalla de la solución funcionando: Se encuentra en el repositorio de Github, en carpeta llamada "Imagenes".
 
 
 # Diagramas 
