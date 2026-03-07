@@ -15,11 +15,10 @@ Kevin David Jiménez Escalante
 
 Documento con capturas de pantalla de solución funcionando: En carpeta "imagenes"
 
-Enlace a máquina virtual (instancia) Oracle Cloud: [[INSERTAR ENLACE]]
+Enlace a la máquina virtual pública con la solución corriendo: http://147.224.191.175:3000
 
 Enlace al repositorio de código fuente en GIT: https://github.com/acanossa14/tareaDiseno
 
-Solución funcionando: http://147.224.191.175:3000
 
 # Diagramas 
 
