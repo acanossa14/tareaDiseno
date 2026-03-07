@@ -1,9 +1,9 @@
 # DS_TareaMVCconMean
-MVC con Mean
+Tarea 1: MVC con MEAN
 
-Integrantes:
+Integrantes del Equipo 5:
 
-Andrés De Jesus	Canossa Castro	
+Andrés De Jesús	Canossa Castro	
 
 Marcelo Gómez Cordero	
 
