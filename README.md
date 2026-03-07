@@ -25,6 +25,9 @@ Enlace al repositorio de código fuente en GIT:
 
 https://github.com/acanossa14/tareaDiseno
 
+
+Solución funcionando: http://147.224.191.175:3000
+
 # Diagramas 
 
 ![DS_DiagramaDeComponentes_MVCconMean](https://github.com/user-attachments/assets/d5058718-5f0c-458f-9a71-9f8d08eb01e9)
