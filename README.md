@@ -13,18 +13,11 @@ Kevin David Jiménez Escalante
 
 # Entregable
 
-Documento con capturas de pantalla de solución funcionando:
+Documento con capturas de pantalla de solución funcionando: En carpeta "imagenes"
 
-[[INSERTAR ENLACE]]
+Enlace a máquina virtual (instancia) Oracle Cloud: [[INSERTAR ENLACE]]
 
-Enlace a máquina virtual (instancia) Oracle Cloud:
-
-[[INSERTAR ENLACE]]
-
-Enlace al repositorio de código fuente en GIT:
-
-https://github.com/acanossa14/tareaDiseno
-
+Enlace al repositorio de código fuente en GIT: https://github.com/acanossa14/tareaDiseno
 
 Solución funcionando: http://147.224.191.175:3000
 
@@ -33,14 +26,6 @@ Solución funcionando: http://147.224.191.175:3000
 ![DS_DiagramaDeComponentes_MVCconMean](https://github.com/user-attachments/assets/d5058718-5f0c-458f-9a71-9f8d08eb01e9)
 
 <img width="1635" height="503" alt="DS_DiagramaDeClases_MVCconMEAN" src="https://github.com/user-attachments/assets/d06f1865-a875-4873-92fb-08858b52d85c" />
-
-
-# Otros Recursos
-
-Link draw.io diagramas:
-
-https://app.diagrams.net/?src=about#G1_9JGzNEreaZdCks66kBF-FrY7rttK4hY#%7B%22pageId%22%3A%22Ot7jH0u74iIDAgigdOpp%22%7D
-
 
 Lo que aprendimos (instancias Oracle Cloud):
 
