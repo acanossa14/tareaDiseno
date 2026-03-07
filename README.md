@@ -25,7 +25,7 @@ Solución funcionando: http://147.224.191.175:3000
 
 ![DS_DiagramaDeComponentes_MVCconMean](https://github.com/user-attachments/assets/d5058718-5f0c-458f-9a71-9f8d08eb01e9)
 
-<img width="1635" height="503" alt="DS_DiagramaDeClases_MVCconMEAN" src="https://github.com/user-attachments/assets/d06f1865-a875-4873-92fb-08858b52d85c" />
+![DS_DiagramaDeClases_MVCconMEAN](https://github.com/user-attachments/assets/504b1199-ec09-4188-97fc-86fbd8adf49d)
 
 Lo que aprendimos (instancias Oracle Cloud):
 
